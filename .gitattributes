@@ -1,3 +1,6 @@
+ # Chỉ track file .exe và .iso bằng Git LFS
 *.exe filter=lfs diff=lfs merge=lfs -text
 *.iso filter=lfs diff=lfs merge=lfs -text
-*.exe !text !filter !merge !diff
+
+# Các file khác (png, jpg, svg, ...) sẽ được commit bình thường
+
