@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign in | Shop thể thao</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/apple-touch-icon.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <script src="./assets/js/scripts.js"></script>
+        <style>
+            body {
+                font-family: Gordita, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="auth">
+            <div class="auth__intro auth__intro-sign-in">
+                <a href="./" class="logo auth__intro-logo">
+                    <img
+                        src="./assets/icons/logo.svg"
+                        alt=""
+                        class="logo__img"
+                    />
+                    <h2 class="logo__title">Shop Thể Thao</h2>
+                </a>
+                <img
+                    src="./assets/img/auth/intro.svg"
+                    alt=""
+                    class="auth__intro-img"
+                />
+                <p class="auth__intro-text">
+                    Những giá trị thương hiệu xa xỉ tốt nhất, sản phẩm chất
+                    lượng cao và dịch vụ sáng tạo
+                </p>
+                <button
+                    class="auth__intro-next js-toggle"
+                    toggle-target="#auth-content"
+                >
+                    <img src="./assets/img/auth/intro-arrow.svg" alt="" />
+                </button>
+            </div>
+            <div id="auth-content" class="auth__content">
+                <div class="auth__content-inner">
+                    <a href="./" class="logo">
+                        <img
+                            src="./assets/icons/logo.svg"
+                            alt=""
+                            class="logo__img"
+                        />
+                        <h2 class="logo__title">Shop Thể Thao</h2>
+                    </a>
+                    <h1 class="auth__heading">Xin chào lần nữa!</h1>
+                    <p class="auth__desc">
+                        Chào mừng bạn quay lại để đăng nhập. Là khách hàng quay
+                        lại, bạn có thể truy cập vào tất cả thông tin đã lưu
+                        trước đó.
+                    </p>
+                    <form
+                        action="./index -logined.html"
+                        class="form auth__form"
+                    >
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="email"
+                                    name=""
+                                    id=""
+                                    placeholder="Email"
+                                    class="form__input"
+                                    required
+                                />
+                                <img
+                                    src="./assets/icons/mesage.svg"
+                                    alt=""
+                                    class="form__input-icon"
+                                />
+                                <img
+                                    src="./assets/icons/form-error.svg"
+                                    alt=""
+                                    class="form__input-icon-error"
+                                />
+                            </div>
+                            <p class="form__error">Email chưa đúng định dạng</p>
+                        </div>
+                        <div class="form__group">
+                            <div class="form__text-input">
+                                <input
+                                    type="password"
+                                    name=""
+                                    id=""
+                                    placeholder="Mật khẩu"
+                                    class="form__input"
+                                    required
+                                    minlength="6"
+                                />
+                                <img
+                                    src="./assets/icons/lock.svg"
+                                    alt=""
+                                    class="form__input-icon"
+                                />
+                                <img
+                                    src="./assets/icons/form-error.svg"
+                                    alt=""
+                                    class="form__input-icon-error"
+                                />
+                            </div>
+                            <p class="form__error">Mật khẩu ít nhất 6 kí tự</p>
+                        </div>
+
+                        <div
+                            class="form__group form__group--inline form__group-checkbox"
+                        >
+                            <div class="form__checkbox">
+                                <input
+                                    type="checkbox"
+                                    name="remember"
+                                    id="remember"
+                                    hidden
+                                />
+                                <label
+                                    for="remember"
+                                    class="form__checkbox-label"
+                                    >Remember me</label
+                                >
+                            </div>
+                            <a
+                                href="./reset-password.html"
+                                class="auth__link form__pull-right"
+                            >
+                                Quên mật khẩu?
+                            </a>
+                        </div>
+                        <div class="form__group auth__btn-group">
+                            <button
+                                class="btn btn--primary auth__btn form__submit-btn"
+                            >
+                                Đăng nhập
+                            </button>
+                            <button
+                                class="btn btn--outline auth__btn btn--no-margin"
+                            >
+                                <img
+                                    src="./assets/icons/google.svg"
+                                    alt=""
+                                    class="btn__icon icon"
+                                />
+                                Đăng nhập bằng Google
+                            </button>
+                        </div>
+                    </form>
+                    <p class="auth__text">
+                        Bạn chưa có tài khoản?
+                        <a
+                            href="./sign-up.html"
+                            class="auth__link auth__text-link"
+                            >Đăng ký</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </main>
+        <script>
+            window.dispatchEvent(new Event("template-loaded"));
+        </script>
+    </body>
+</html>

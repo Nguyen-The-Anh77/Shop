@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="dark ">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Similar-products|Grocery Mart</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/apple-touch-icon.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <script src="./assets/js/scripts.js"></script>
+        
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header-logined.html");
+        </script>
+
+        <main  class="container home">
+            <div class="product-container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="./" class="breadcrumbs__link"
+                            >Trang chủ
+                            <img
+                                src="./assets/icons/arow-right.svg"
+                                alt=""
+                                class="breadcrumbs__icon"
+                            />
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link breadcrumbs__link-last">
+                            Giày bóng đá
+                           </a>
+                    </li>
+                     
+                </ul>
+            </div>
+            <section class="home__container">
+                <div class="category">
+                    <ul class="category-list">
+                        <a href="" class="category-link" >
+                            <img src="./assets/img/category-item/cate-1.png" alt="" class="category__img icon">
+                            <li class="category-item">Giày bóng đá</li>
+                        </a>
+                         
+                            <a href="" class="category-link" >
+                                <img src="./assets/img/category-item/cate-3.png" alt="" class="category__img icon">
+                                <li class="category-item">Quần áo</li>
+                            </a> 
+                        <a href="" class="category-link" >
+                            <img src="./assets/img/category-item/cate-2.png" alt="" class="category__img icon">
+                            <li class="category-item">Bóng đá</li>
+                        </a>
+                        <a href="" class="category-link" >
+                            <img src="./assets/img/category-item/cate-1.png" alt="" class="category__img icon">
+                            <li class="category-item">Phụ kiện bóng đá</li>
+                        </a>
+                    </ul>
+                </div>
+            </section>
+            <section class="home__container">
+                <div class="home__row">
+                    <h2 class="home__heading">Giày bóng đá</h2>
+                    <div class="filter-wrap">
+                        <button class="filter-btn js-toggle" toggle-target="#home-filter">
+                            Filter
+                           
+                            <img
+                                src="./assets/icons/filter.svg"
+                                alt=""
+                                class="filter-btn__icon icon"
+                            />
+                        </button>
+                        <div id="home-filter" class="filter hide" >
+                            <img src="./assets/icons/arow-up.png" alt="" class="filter__arrow">
+                            <h3 class="filter__heading">Lọc</h3>
+                             <form action="" class="filter__form">
+                                <div class="filter__row filter__content">
+                                    <!-- filter collumn-1 -->
+                                    <div class="filter__col">
+                                        <label for="slider" class="filter__form-label">Giá</label>
+                                        <div class="filter__form-group">
+                                            <!-- <div class="filter__form-slider" style="--min-value:10%; --max-value:60%;"></div> -->
+                                            <input type="range" id="slider" min="0" max="1000000" step="0" value="0" class="filter__form-slider">
+                                        </div>
+                                        <div class="filter__form-group filter__form-group--inline ">
+                                           <div> 
+                                            <label for="min-price" class="filter__form-label filter__form-label--small">Tối thiểu</label>
+                                            <div class="filter__form-text-input--small filter__form-text-input"><input type="text" name="" id="min-price" value="0đ" class="filter__form-input " readonly ></div>
+                                            
+                                        </div>
+                                        <div> 
+                                            <label for="max-price" class="filter__form-label filter__form-label--small">Tối đa</label>
+                                            <div class="filter__form-text-input--small filter__form-text-input"><input type="text" name="" id="max-price" value="5.000.000đ" class="filter__form-input " readonly ></div>
+                                            
+                                        </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="filter__separate"></div>  
+                                    <!-- filter collumn-2 -->
+                                    <div class="filter__col">
+                                        <label for="shoe-size" class="filter__form-label">Size giày</label>
+                                        <div class="filter__col-list">
+                                        <div class="filter__form-size-option" data-size="35">35</div>
+                                        <div class="filter__form-size-option" data-size="36">36</div>
+                                        <div class="filter__form-size-option" data-size="37">37</div>
+                                        <div class="filter__form-size-option" data-size="38">38</div>
+                                        <div class="filter__form-size-option" data-size="39">39</div>
+                                        <div class="filter__form-size-option" data-size="40">40</div>
+                                        <div class="filter__form-size-option" data-size="41">41</div>
+                                        <div class="filter__form-size-option" data-size="42">42</div>
+                                        <div class="filter__form-size-option" data-size="43">43</div>
+                                        <div class="filter__form-size-option" data-size="44">44</div>
+                                        <div class="filter__form-size-option" data-size="45">45</div>
+                                        </div>
+                                    </div>
+                                     
+                                   
+                                    <div class="filter__separate"></div>  
+                                    <!-- filter collumn-3-->
+                                    <div class="filter__col">
+                                         
+                                          <label for="shoe-size" class="filter__form-label">Size quần áo</label>
+                                          <div class="filter__col-list">
+                                            <div class="filter__form-size-clothes" data-size="XS">XS</div>
+                                            <div class="filter__form-size-clothes" data-size="M">M</div>
+                                            <div class="filter__form-size-clothes" data-size="L">L</div>
+                                            <div class="filter__form-size-clothes" data-size="XL">XL</div>
+                                            <div class="filter__form-size-clothes" data-size="2XL">2XL</div>
+                                          
+                                          </div>
+                                    </div>
+                                    <div class="filter__separate"></div>  
+                                    <div class="filter__col">
+                                        <label for="shoe-size" class="filter__form-label">Loại sản phẩm</label>
+                                        <div class="filter__form-group">
+                                            <div class="filter__form-text-input">
+                                                <input type="text" name="" id="" class="filter__form-input" placeholder="Nhập loại sản phẩm">
+                                                <img src="./assets/icons/search.svg" alt="" class="filter__form-input-icon icon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="filter__row filter__footer">
+                        <button class="filter-btn js-toggle" toggle-target="#home-filter">
+                            <button class="btn btn--text filter__cancel js-toggle" toggle-target="#home-filter">Thoát</button>
+                                    <button class="btn btn--primary filter__submit js-toggle" toggle-target="#home-filter">Hiển thị kết quả </button>
+                                   
+                                    
+                                </div>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="   row row-cols-4 row-cols-lg-2 row-cols-sm-1 g-3  ">
+                    <!-- item-1-->
+                       
+                    
+                    
+                    
+                    <!-- Tương tự với các item khác -->
+                    
+                    
+                    
+                    <!-- item-2-->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/item-2-Photoroom.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                   <div class="product-card__icon-wrap">
+                                    <a href="!#" class="product-card__link">
+                                        <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                    </a>
+                                    <a href="./product-detail.html" class="product-card__link">
+                                        <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                    </a>
+                                    <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                        <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                    </button>
+                                     
+                                   </div>
+                                </div>
+                                
+                            </div> 
+                           <a href="./product-detail.html">
+                            <h3 class="product-card__title  line-clamp">
+                                
+                                Giày bóng đá Động Lực Jogarbola Kumo
+                                "Light blue/Purple" JG-221106-1-04 -
+                                Hàng Chính Hãng</a
+                            >
+                        </h3>
+                           </a>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >955.000đ</span
+                                >
+                                  
+                                    
+                                <img
+                                    src="./assets/icons/star.svg"
+                                    alt=""
+                                    class="product-card__star"
+                                />
+                                <span class="product-card__score">4.7</span> 
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/item-1-Photoroom.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày bóng đá Động Lực Jogarbola Kumo
+                                    "Aqua/White" JG-221106-1-03 - Hàng Chính
+                                    Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >900.100đ</span
+                                >
+                               
+                                <img
+                                    src="./assets/icons/star.svg"
+                                    alt=""
+                                    class="product-card__star"
+                                />
+                                <span class="product-card__score">4.0</span>
+                              
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img src="./assets/img/product/it-2.1.png" alt="" class="product-card__thumb" />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title line-clamp">
+                                <a href="./product-detail.html">Giày bóng đá cỏ nhân tạo Nam Động Lực Jogarbola Racer JG-2223 "Cam" JG-2223-04 - Hàng Chính Hãng</a>
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price">675.000đ</span>
+                                <div class="product-card__row">
+                                    
+                                    <img src="./assets/icons/star.svg" alt="" class="product-card__star" />
+                                    <span class="product-card__score">4.7</span>
+                                
+                            </div>
+                        </article>
+                    </div>
+                    <!-- item-4-->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.2.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày Bóng Đá Đinh TF Grand Sport "Đen" GS-333117-3 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Grand Sport</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >898.100đ</span
+                                >
+                                 
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.8</span> 
+                            </div>
+                        </article>
+                    </div>
+                    <!-- item-5 -->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.3.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày bóng đá Nam Động Lực Jogarbola Koha 2103 "Đỏ" JG-KOHA-03 - Hàng Chính Hãng
+                                    </a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >710.100đ</span
+                                >
+                                <div class="product-card__row">    
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.9</span></div>
+                            
+                        </article>
+                    </div>
+                    <!-- item-6 -->
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.4.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    > Giày bóng đá Nam Động Lực Jogarbola Sân Cỏ Tự Nhiên "Đen Cam" 190424A-02 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >850.000đ</span
+                                >
+                                <div class="product-card__row">  
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">3.8</span> 
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.5.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày bóng đá Nam Động Lực Jogarbola X-Factor "Xanh Biển" 190424B-03 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >700.000đ</span
+                                >
+                                <div class="product-card__row">    
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.7</span></div>
+                             
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.8.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày Bóng Đá Đinh TF Grand Sport "Trắng" GS-333117-2 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Grand Sport</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >889.000đ</span
+                                >
+                                <div class="product-card__row"> 
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.9</span></div>
+                            
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.6.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày bóng đá Nam Động Lực Jogarbola Colorlux 2.0 "Tím" JG-CL20-04 - Hàng Chính Hãng </a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >715.000đ</span
+                                >
+                                <div class="product-card__row">   
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.7</span></div>
+                            
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.7.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày bóng đá Nam Động Lực Jogarbola Colorlux 2.0 Ultra "Xanh Lá" JG-CL20U-04 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand">Động Lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >715.000đ</span
+                                >
+                                <div class="product-card__row">   
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.3</span></div>
+                            
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.9.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày Bóng Đá Đinh TF Grand Sport "Tím" GS-333117-1 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand"> Grand Sport</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >899.000đ</span
+                                >
+                                <div class="product-card__row">    
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.7</span></div>
+                             
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="product-card">
+                            <div class="product-card__img-wrap">
+                              
+                                <a href="./product-detail.html">
+                                    <img
+                                        src="./assets/img/product/it-2.10.png"
+                                        alt=""
+                                        class="product-card__thumb"
+                                    />
+                                </a>
+                                <div class="product-card__icon-wraps">
+                                    <div class="product-card__icon-wrap">
+                                     <a href="!#" class="product-card__link">
+                                         <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <a href="./product-detail.html" class="product-card__link">
+                                         <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                     </a>
+                                     <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                         <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                     </button>
+                                      
+                                    </div>
+                                 </div>
+                            </div>
+                            <h3 class="product-card__title  line-clamp">
+                                <a href="./product-detail.html"
+                                    >Giày bóng đá Nam Động Lực Jogarbola Koha 2103 "Ghi" JG-KOHA-04 - Hàng Chính Hãng</a
+                                >
+                            </h3>
+                            <p class="product-card__brand"> Động lực</p>
+                            <div class="product-card__row">
+                                <span class="product-card__price"
+                                    >710.000 đ</span
+                                >
+                                <div class="product-card__row">   
+                                    <img
+                                        src="./assets/icons/star.svg"
+                                        alt=""
+                                        class="product-card__star"
+                                    />
+                                    <span class="product-card__score">4.9</span></div>
+                             
+                        </article>
+                    </div>
+                   
+                   
+                </div>
+               
+            </section>
+        </main>
+        <header id="footer" class="footer"></header>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+  <div id="delete-confirm" class="search  hide">
+    <button class="search-btn__close js-toggle" toggle-target="#delete-confirm">&times;</button>
+  <div class="search--large">
+        <input
+            type="text"
+            placeholder="Tìm kiếm mục"
+            class="search--large__input"
+        />
+        <button class="search--large__submit">
+            <img
+                src="./assets/icons/search.svg"
+                alt=""
+                class="search--large__icon icon"
+            />
+        </button>
+    </div>
+    
+     
+    <div class="dialog__overlay  " toggle-target="#delete-confirm"></div>
+</div>
+      
+    </body>
+</html>

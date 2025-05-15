@@ -1,0 +1,244 @@
+@use "../abstracts";
+.filter-wrap {
+    position: relative;
+    z-index: 1;
+}
+.filter {
+    position: absolute;
+    right: 0;
+    top: 55px;
+
+    border-radius: 20px;
+    background-color: var(--filter-form-bg);
+    filter: drop-shadow(0px 40px 90px var(--filter-form-arrow));
+    transition: opacity visibility;
+    transition-duration: 0.5s;
+
+    @include abstracts.breakpoint(sm) {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        border-radius: 0;
+    }
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__arrow {
+        height: 20.5px;
+        position: absolute;
+        top: -15px;
+        right: 11px;
+        filter: var(--filter-form-arrow);
+    }
+    &__heading {
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 145.455%;
+    }
+    &__col-list {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-left: -5px;
+    }
+    &__form {
+        margin-top: 30px;
+        &-label {
+            display: block;
+            white-space: nowrap;
+            font-size: 2.2rem;
+            font-weight: 500;
+            line-height: 145.455%;
+            &--small {
+                margin-bottom: 10px;
+                font-size: 1.4rem;
+                line-height: 142.875%;
+            }
+        }
+        &-text-input {
+            margin-top: 34px;
+            border-radius: 6px;
+            border: 1px solid #d2d1d6;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            width: 250px;
+            height: 44px;
+            padding: 0 16px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            &--small {
+                margin-top: -6px;
+                width: 110px;
+                height: 36px;
+                padding: 0 12px;
+                font-size: 1.4rem;
+                font-weight: 500;
+                line-height: 142.875%;
+                @include abstracts.breakpoint(sm) {
+                    width: 100%;
+                }
+            }
+        }
+        &-size-option,
+        &-size-clothes {
+            display: inline-block;
+            margin: 5px 10px;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 142.875%;
+            &:hover {
+                opacity: 0.6;
+            }
+            &.selected {
+                background-color: #000;
+                color: white;
+                border-color: #000;
+            }
+        }
+        &-group {
+            margin-top: 20px;
+            &--inline {
+                display: flex;
+                gap: 30px;
+            }
+        }
+        &-slider {
+            position: relative;
+            -webkit-appearance: none; /* Đảm bảo thanh trượt có thể tùy chỉnh trên Safari */
+            appearance: none; /* Đảm bảo thanh trượt có thể tùy chỉnh trên các trình duyệt khác */
+            box-sizing: border-box; /* Đảm bảo phần padding không làm lệch thanh trượt */
+            width: 100%;
+            height: 2px;
+            background-color: #d2d1d6;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                translate: 0 -50%;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 6px solid #ffb700;
+                background-color: var(--filter-form-bg);
+            }
+
+            &::-webkit-slider-thumb {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                border: 6px solid #ffb700;
+                background-color: var(--filter-form-bg);
+            }
+            &::-webkit-slider-runnable-track {
+                position: absolute;
+
+                background-color: #ffb700;
+                width: 100%;
+                height: 2px;
+            }
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 22px; /* Kích thước tay cầm */
+                height: 22px; /* Kích thước tay cầm */
+                background: #f39c12; /* Màu tay cầm */
+                border-radius: 50%; /* Tay cầm tròn */
+                background-color: var(--filter-form-bg);
+                cursor: pointer;
+                margin-top: -11px; /* Điều chỉnh tay cầm để căn giữa với thanh trượt */
+            }
+            &::-moz-range-thumb {
+                width: 22px; /* Kích thước tay cầm */
+                height: 22px; /* Kích thước tay cầm */
+                background: #f39c12; /* Màu tay cầm */
+                border-radius: 50%; /* Tay cầm tròn */
+                cursor: pointer;
+            }
+            &::-webkit-slider-thumb:hover {
+                background: #e67e22; /* Màu khi hover */
+            }
+
+            &::-moz-range-thumb:hover {
+                background: #e67e22; /* Màu khi hover */
+            }
+
+            &::-ms-thumb:hover {
+                background: #e67e22; /* Màu khi hover */
+            }
+        }
+        &-input {
+            width: 100%;
+            &::placeholder {
+                font-weight: 500;
+            }
+        }
+        &-input-icon {
+            margin-left: 12px;
+        }
+    }
+    &__row {
+        display: flex;
+    }
+    &__separate {
+        width: 1px;
+        margin: 0 15px;
+        background-color: #eee;
+        @include abstracts.breakpoint(xl) {
+            width: 100%;
+            height: 1px;
+            margin: 30px 0;
+        }
+    }
+    &__footer {
+        margin-top: 32px;
+        display: flex;
+        justify-content: flex-end;
+        @include abstracts.breakpoint(sm) {
+            position: sticky;
+            bottom: 30px;
+            background-color: var(--filter-form-bg);
+        }
+    }
+    &__cancel,
+    &__submit {
+        height: 38px;
+        padding: 0 10px;
+        @include abstracts.breakpoint(sm) {
+            flex: 1;
+            height: 42px;
+        }
+    }
+    &__cancel {
+        font-size: 1.4rem;
+    }
+    &__submit {
+        font-size: 1.5rem;
+    }
+    &__heading,
+    &__content,
+    &__footer {
+        padding: 15px;
+    }
+    &__content {
+        max-height: calc(100vh - 350px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        @include abstracts.breakpoint(xl) {
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+        @include abstracts.breakpoint(sm) {
+            max-height: calc(100vh - 230px);
+            margin-bottom: 60px;
+        }
+    }
+}

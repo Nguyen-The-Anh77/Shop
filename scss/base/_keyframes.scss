@@ -1,0 +1,17 @@
+@keyframes shake {
+    0% {
+        translate: 0;
+    }
+    20% {
+        translate: 4px;
+    }
+    50% {
+        translate: -4px;
+    }
+    75% {
+        translate: 4px;
+    }
+    100% {
+        translate: 0;
+    }
+}

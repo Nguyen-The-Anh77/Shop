@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Grocery Mart</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/apple-touch-icon.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header-logined.html");
+        </script>
+        <main class="product-page">
+            <div class="container">
+                <div class="product-container">
+                    <div class="search-bar">
+                        <input
+                            type="text"
+                            name=""
+                            placeholder="Tìm kiếm mục"
+                            id=""
+                            class="search-bar__input"
+                        />
+                        <button class="search-bar__submit">
+                            <img
+                                src="./assets/icons/search.svg"
+                                alt=""
+                                class="search-bar__icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="./" class="breadcrumbs__link"
+                                >Trang chủ
+                                <img
+                                    src="./assets/icons/arow-right.svg"
+                                    alt=""
+                                    class="breadcrumbs__icon"
+                                />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="./similar -products.html" class="breadcrumbs__link">
+                              Giày đá bóng
+                                <img
+                                    src="./assets/icons/arow-right.svg"
+                                    alt=""
+                                    class="breadcrumbs__icon"
+                            /></a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a
+                                href="#!"
+                                class="breadcrumbs__link breadcrumbs__link-last"
+                            >
+                                Bộ quần áo thi đấu đội tuyển bóng chuyền Nam
+                                Việt Nam 2024 "Trắng" MJ-E2214-1 - Hàng Chính
+                                Hãng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-container prod-info-content">
+                    <div class="row">
+                        <div class="col-5 col-xl-6 col-lg-12">
+                            <div class="product-preview">
+                                <!-- Các ảnh chính trong carousel -->
+                                <div class="product-preview__list">
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-2-Photoroom.png"
+                                            alt="Item 3"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-2.1-Photoroom.png "
+                                            alt="Item 1"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-2.2-Photoroom.png"
+                                            alt="Item 2"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-2.3-Photoroom.png"
+                                            alt="Item 4"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <!-- <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-5.webp"
+                                            alt="Item 4"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-6.webp"
+                                            alt="Item 4"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-7.webp"
+                                            alt="Item 4"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div>
+                                    <div class="product-preview__item">
+                                        <img
+                                            src="./assets/img/product/item-8.webp"
+                                            alt="Item 4"
+                                            class="product-preview__main-img"
+                                        />
+                                    </div> -->
+                                    <!-- Các nút điều hướng -->
+                                  
+                                </div>
+                                <button
+                                class="product-preview__prev"
+                                onclick="changeSlide(-1)"
+                            >
+                                &#10094;
+                            </button>
+                            <button
+                                class="product-preview__next"
+                                onclick="changeSlide(1)"
+                            >
+                                &#10095;
+                            </button>
+                                <!-- Các hình thu nhỏ bên dưới ảnh chính -->
+                                <div class="product-preview__thumbs">
+                                    <img
+                                        src="./assets/img/product/item-2-Photoroom.png"
+                                        alt="Item 3 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(0)"
+                                    />
+                                    <img
+                                        src="./assets/img/product/item-2.1-Photoroom.png"
+                                        alt="Item 1 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(1)"
+                                    />
+                                    <img
+                                        src="./assets/img/product/item-2.2-Photoroom.png"
+                                        alt="Item 2 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(2)"
+                                    />
+                                    <img
+                                        src="./assets/img/product/item-2.3-Photoroom.png"
+                                        alt="Item 4 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(3)"
+                                    />
+                                    <!-- <img
+                                        src="./assets/img/product/item-5.webp"
+                                        alt="Item 3 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(4)"
+                                    />
+                                    <img
+                                        src="./assets/img/product/item-6.webp"
+                                        alt="Item 1 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(5)"
+                                    />
+                                    <img
+                                        src="./assets/img/product/item-7.webp"
+                                        alt="Item 2 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(6)"
+                                    />
+                                    <img
+                                        src="./assets/img/product/item-8.webp"
+                                        alt="Item 4 Thumbnail"
+                                        class="product-preview__thumb-img"
+                                        onclick="setMainImage(7)"
+                                    /> -->
+                                    <!-- Nút chuyển tiếp ảnh thu nhỏ -->
+                                    <!-- <button
+                                        class="thumbs-prev"
+                                        onclick="changeThumbSlide(-1)"
+                                    >
+                                        &#10094;
+                                    </button>
+                                    <button
+                                        class="thumbs-next"
+                                        onclick="changeThumbSlide(1)"
+                                    >
+                                        &#10095;
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7 col-xl-6 col-lg-12">
+                            <form action="" class="form">
+                                <section class="prod-info">
+                                    <h1 class="prod-info__heading">
+                                        Giày bóng đá Động Lực Jogarbola Kumo
+                                        "Aqua/White" JG-221106-1-03 - Hàng Chính
+                                        Hãng
+                                    </h1>
+                                    <div class="row">
+                                        <div class="col-6 col-xl-12">
+                                            <div class="prod-prop">
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="prod-prop__icon"
+                                                />
+                                                <h4 class="prod-prop__title">
+                                                    (3.5) 1100 đánh giá
+                                                </h4>
+                                            </div>
+                                            <!-- h -->
+                                            <form id="orderForm">
+                                                <!-- Lựa chọn kích thước giày -->
+                                                <div class="prod__col">
+                                                    <span class="prod__col-size"
+                                                        >Kích thước:
+                                                    </span>
+                                                    <label
+                                                        for="shoe-size"
+                                                        class="prod__form-label"
+                                                        id="selectedSizeLabel"
+                                                    >
+                                                    </label>
+
+                                                    <div class="prod__col-list">
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="37"
+                                                        >
+                                                            37
+                                                        </div>
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="38"
+                                                        >
+                                                            38
+                                                        </div>
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="39"
+                                                        >
+                                                            39
+                                                        </div>
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="40"
+                                                        >
+                                                            40
+                                                        </div>
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="41"
+                                                        >
+                                                            41
+                                                        </div>
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="42"
+                                                        >
+                                                            42
+                                                        </div>
+                                                        <div
+                                                            class="prod__form-size-option"
+                                                            data-size="43"
+                                                        >
+                                                            43
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Số lượng -->
+                                                <div class="quantity-control prod-prop__ctrl">
+                                                    <button
+                                                        type="button"
+                                                        id="decrease"
+                                                        onclick="changeQuantity(-1)"
+                                                        class="quantity-control__add"
+                                                    >
+                                                        -
+                                                    </button>
+                                                    <input
+                                                        type="number"
+                                                        id="quantity1"
+                                                        value="1"
+                                                        min="1"
+                                                        readonly
+                                                        class="quantity-control__input"
+                                                    />
+                                                    <button
+                                                        type="button"
+                                                        id="increase"
+                                                        onclick="changeQuantity(1)"
+                                                        class="quantity-control__reduce"
+                                                    >
+                                                        +
+                                                    </button>
+                                                </div>
+                                            </form>
+                                            <!-- h -->
+                                        </div>
+                                        <div class="col-6 col-xl-12">
+                                            <div class="prod-prop">
+                                                <img
+                                                    src="./assets/icons/document.svg"
+                                                    alt=""
+                                                    class="prod-prop__icon icon"
+                                                />
+                                                <h4 class="prod-prop__title">
+                                                    So sánh
+                                                </h4>
+                                            </div>
+                                            <div class="prod-prop">
+                                                <img
+                                                    src="./assets/icons/buy.svg"
+                                                    alt=""
+                                                    class="prod-prop__icon icon"
+                                                />
+                                                <div>
+                                                    <h4
+                                                        class="prod-prop__title"
+                                                    >
+                                                        Vận chuyển
+                                                    </h4>
+                                                    <p class="prod-prop__desc">
+                                                        Từ $6 cho 1-3 ngày
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="prod-prop">
+                                                <img
+                                                    src="./assets/icons/bag.svg"
+                                                    alt=""
+                                                    class="prod-prop__icon icon"
+                                                />
+                                                <div>
+                                                    <h4
+                                                        class="prod-prop__title"
+                                                    >
+                                                        Nhặt lên
+                                                    </h4>
+                                                    <p class="prod-prop__desc">
+                                                        Trong số 2 cửa hàng, hôm
+                                                        nay
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="prod-info__cart">
+                                                <div class="prod-info__row">
+                                                    <span
+                                                        class="prod-info__price"
+                                                        >100.000đ</span
+                                                    >
+                                                    <span class="prod-info__tax"
+                                                        >10%</span
+                                                    >
+                                                </div>
+                                                <p
+                                                    class="prod-info__total-price"
+                                                >
+                                                955.000đ
+                                                </p>
+                                                <div class="prod-info__row">
+                                                    <button
+                                                        class="btn btn--primary prod-info__add-to-cart js-toggle"  toggle-target="#delete-confirm"
+                                                    >
+                                                        Thêm vào giỏ hàng
+                                                    </button>
+                                                    <button
+                                                        class="like-btn prod-info__like-btn"
+                                                        onclick="transformHeart(this)"
+                                                    >
+                                                        <img
+                                                            src="./assets/icons/heart.svg"
+                                                            alt=""
+                                                            class="like-btn__icon"
+                                                        />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="prod-tab js-tabs">
+                        <ul class="prod-tab__list">
+                            <li class="prod-tab__item prod-tab__item--current">Mô tả sản phẩm</li>
+                            <li class="prod-tab__item ">
+                                Đánh giá (1000)
+                            </li>
+                            <li class="prod-tab__item ">Sản phẩm tương tự</li>
+                            
+                        </ul>
+                        <div class="prod-tab__contents">
+                            <div class="prod-tab__content  prod-tab__content--current"> 
+                              <div class="row">
+                                <div class="col-8   col-xl-10   col-lg-12  ">  <div class="text-content ">
+                                    <h2>Giày bóng đá Jogarbola Kumo </h2>
+                                    <p>- Công nghệ da Ultra Microfiber phủ vi điểm: Kumo có phần upper làm bằng loại da Super Microfiber siêu nhẹ, thoáng khí với công nghệ phủ TPU vi điểm trên mũi giày làm tăng độ bám dính tại điểm tiếp xúc bóng, chống nước hiệu quả, giúp tăng tuổi thọ của giầy.</p>
+                               <p>- Công nghệ J-Touch: Họa tiết vân lượn sóng silicon giúp người chơi kiểm soát bóng dễ dàng và chính xác hơn nhưng vẫn rất mềm mại và cho cảm giác bóng chân thật nhất.</p>
+                                    
+                             <p>- Công nghệ J - Foam: Đế EVA kết hợp cùng lớp Phylon độ đàn hồi cao, linh hoạt, thoáng khí, mang đến cảm giác thoải mái, mát mẻ cho đôi chân; đồng thời chống sốc, bảo vệ bàn chân. Lớp phylon được tích hợp ở đế giầy giúp giảm chấn, gia tăng đàn hồi, êm chân, giúp làm giảm trọng lượng giầy, hỗ trợ tối ưu các động tác bật nhảy. Lớp đệm này có khả năng chịu lực gấp đôi so với những đôi giày đế làm từ Cao su cùng với đó đem lại cảm giác thoải mái hơn cho bàn chân, đặc biệt là khi sử dụng giày nhiều giờ liền không gây cảm giác đau, mỏi.</p>
+                             <p>- Công nghệ J- Active: Thiết kế đinh ngắn, rải đều, gia cố phần mũi và gót, chống mài mòn và hạn chế chấn thương và trơn trượt cho cầu thủ, đồng thời hỗ trợ tối ưu trong các pha xử lý bóng.
+
+                             </p>
+                             <h2>Đặc điểm nổi bật</h2>
+                             <h3>HOA VĂN IN NỔI BẰNG SILICON</h3>
+                             <p>Siêu dính bóng, kiểm soát tối đa</p>
+                             <h3>LƯỠI GÀ MICROFIBER LÓT MÚT XỐP</h3>
+                             <p>Bảo vệ mu bàn chân, hạn chế kẹt dây giày, ngăn dị vật lọt vào bên trong giày</p>
+                             <h3>ĐẾ PHYLON, ĐINH TF NGẮN</h3>
+                             <p>Đàn hồi, linh hoạt, chống sốc, bám sân</p>
+                             <!-- <p><img src="./assets/img/product/item-2-Photoroom.png" alt="">
+                            <em>Lorem ipsum dolor sit </em></p> -->
+                                <!-- <blockquote><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ex blanditiis ea labore? Autem quia blanditiis saepe voluptatum? Saepe possimus vel facere illum, porro magnam quas recusandae inventore ea reiciendis.
+                                    Dolor, enim. Ut perspiciatis iusto ipsa nihil facere! Veniam, repellendus? Ipsam voluptate facere quidem, perspiciatis consequatur eveniet porro soluta laborum sed voluptatem quis, tenetur, accusantium repudiandae totam voluptates dignissimos dolorem!</p></blockquote> -->
+                                 <h3>Thông số kỹ thuật</h3>
+                                    <p><strong>- Chất liệu: </strong>Microfiber in silicon
+                                    </p>
+                                    <p><strong>- Đế giày:</strong> Phylon, cao su, EVA</p>
+                                    <p>
+                                    
+                                        <strong>- Màu sắc:</strong> Black/Yellow, Navy/Blue,</p>
+                                        <p><strong>- Lưỡi gà:</strong> Microfiber, mút xốp Aqua/White, Light blue/Purple</p>
+                                    <p> <strong>- Kích thước:</strong> 38 - 44</p>
+                                    <p><strong>- Mã sản phẩm:</strong> JG-221106-1</p>
+                                </div></div>
+                              </div>
+                                 
+                            </div>
+                            <div class="prod-tab__content">
+                                <div class="prod-content">
+                                    <h2 class="prod-content__heading">
+                                        Những đánh giá của khách hàng
+                                    </h2>
+                                    <div class="row row-cols-3 gx-lg-2 row-cols-md-1 gy-md-3">
+                                        <div class="col">
+                                            <div class="review-card">
+                                                <div
+                                                    class="review-card__content"
+                                                >
+                                                    <img
+                                                        src="./assets/img/avatar/avatar-1.svg"
+                                                        alt=""
+                                                        class="review-card__avatar"
+                                                    />
+                                                    <div
+                                                        class="review-card__info"
+                                                    >
+                                                        <h4
+                                                            class="review-card__title"
+                                                        >
+                                                            Văn Huấn
+                                                        </h4>
+                                                        <p
+                                                            class="review-card__desc"
+                                                        >
+                                                            Sản phẩm khá chất
+                                                            lượng
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="review-card__rating"
+                                                >
+                                                   <div class="review-card__star-list">
+                                                    <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="review-card__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="review-card__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star.svg"
+                                                    alt=""
+                                                    class="review-card__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star-half.svg"
+                                                    alt=""
+                                                    class="review-card__star"
+                                                />
+                                                <img
+                                                    src="./assets/icons/star-blank.svg"
+                                                    alt=""
+                                                    class="review-card__star"
+                                                />
+                                                   </div>
+                                                    <span
+                                                        class="review-card__rating-title"
+                                                        >(3.5) Đánh giá</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="review-card">
+                                                <div
+                                                    class="review-card__content"
+                                                >
+                                                    <img
+                                                        src="./assets/img/avatar/avatar-2.svg"
+                                                        alt=""
+                                                        class="review-card__avatar"
+                                                    />
+                                                    <div
+                                                        class="review-card__info"
+                                                    >
+                                                        <h4
+                                                            class="review-card__title"
+                                                        >
+                                                            Lôn Lòng
+                                                        </h4>
+                                                        <p
+                                                            class="review-card__desc"
+                                                        >
+                                                            Sản phẩm như đầu
+                                                            buồi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="review-card__rating"
+                                                >
+                                                <div class="review-card__star-list">
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                </div>
+                                                    <span
+                                                        class="review-card__rating-title"
+                                                        >(0) Đánh giá</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="review-card">
+                                                <div
+                                                    class="review-card__content"
+                                                >
+                                                    <img
+                                                        src="./assets/img/avatar/avatar-3.svg"
+                                                        alt=""
+                                                        class="review-card__avatar"
+                                                    />
+                                                    <div
+                                                        class="review-card__info"
+                                                    >
+                                                        <h4
+                                                            class="review-card__title"
+                                                        >
+                                                            Đình Chiến
+                                                        </h4>
+                                                        <p
+                                                            class="review-card__desc"
+                                                        >
+                                                            Sản phẩm như mong
+                                                            đợi
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="review-card__rating"
+                                                >
+                                                <div class="review-card__star-list">
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                    <img
+                                                        src="./assets/icons/star-blank.svg"
+                                                        alt=""
+                                                        class="review-card__star"
+                                                    />
+                                                </div>
+                                                    <span
+                                                        class="review-card__rating-title"
+                                                        >(4) Đánh giá</span
+                                                    >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="prod-tab__content"
+                            >
+                                <div class="prod-content">
+                                    <h2 class="prod-content__heading">
+                                        Những sản phẩm tương tự
+                                    </h2>
+                                    <div class="   row row-cols-6 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-3  ">
+                                       
+                                               
+                                            
+                                            
+                                            
+                                            <!-- Tương tự với các item khác -->
+                                            
+                                            
+                                            
+                                            <!-- item-2-->
+                                            
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-1-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Giày bóng đá Động Lực Jogarbola Kumo
+                                                            "Aqua/White" JG-221106-1-03 - Hàng Chính
+                                                            Hãng</a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand">Động Lực</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >900.100đ</span
+                                                        >
+                                                       
+                                                        <img
+                                                            src="./assets/icons/star.svg"
+                                                            alt=""
+                                                            class="product-card__star"
+                                                        />
+                                                        <span class="product-card__score">4.0</span>
+                                                      
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img src="./assets/img/product/item-3-Photoroom.png" alt="" class="product-card__thumb" />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title line-clamp">
+                                                        <a href="./product-detail.html">Bộ quần áo thi đấu đội tuyển bóng chuyền Nam Việt Nam 2024 "Trắng" MJ-E2214-1 - Hàng Chính Hãng</a>
+                                                    </h3>
+                                                    <p class="product-card__brand">Động Lực</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price">955.000đ</span>
+                                                        <div class="product-card__row">
+                                                            
+                                                            <img src="./assets/icons/star.svg" alt="" class="product-card__star" />
+                                                            <span class="product-card__score">4.7</span>
+                                                        
+                                                    </div>
+                                                </article>
+                                            </div>
+                                            
+                                           
+                                            <!-- item-6 -->
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-6-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Giày Cầu Lông / Bóng Chuyền Động Lực Promax "Blue/White " PR-240625-04 - Hàng Chính Hãng</a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand">Động Lực</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >619.000đ</span
+                                                        >
+                                                        <div class="product-card__row">  
+                                                            <img
+                                                                src="./assets/icons/star.svg"
+                                                                alt=""
+                                                                class="product-card__star"
+                                                            />
+                                                            <span class="product-card__score">3.8</span> 
+                                                    </div>
+                                                </article>
+                                            </div>
+                                             
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-8-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Giày Bóng Rổ Jogarbola x Stepback "Xanh" JG-23232-02 - Hàng Chính Hãng</a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand">Động Lực</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >789.000đ</span
+                                                        >
+                                                        <div class="product-card__row"> 
+                                                            <img
+                                                                src="./assets/icons/star.svg"
+                                                                alt=""
+                                                                class="product-card__star"
+                                                            />
+                                                            <span class="product-card__score">4.3</span></div>
+                                                    
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-9-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Hộp cầu lông Động Lực Promax PR-27054 - Hàng Chính Hãng </a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand">Động Lực</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >280.000đ</span
+                                                        >
+                                                        <div class="product-card__row">   
+                                                            <img
+                                                                src="./assets/icons/star.svg"
+                                                                alt=""
+                                                                class="product-card__star"
+                                                            />
+                                                            <span class="product-card__score">4.7</span></div>
+                                                    
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-10-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Giày Cầu Lông / Bóng Chuyền Động Lực Promax "Red" PR-240625-01 - Hàng Chính Hãng</a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand">Động Lực</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >595.000đ</span
+                                                        >
+                                                        <div class="product-card__row">   
+                                                            <img
+                                                                src="./assets/icons/star.svg"
+                                                                alt=""
+                                                                class="product-card__star"
+                                                            />
+                                                            <span class="product-card__score">4.3</span></div>
+                                                    
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-11-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Áo Tập Luyện Đội Tuyển Việt Nam 2023 Grand Sport "Xanh Lá" GS-038976-3 - Hàng Chính Hãng</a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand"> Grand Sport</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >615.000đ</span
+                                                        >
+                                                        <div class="product-card__row">    
+                                                            <img
+                                                                src="./assets/icons/star.svg"
+                                                                alt=""
+                                                                class="product-card__star"
+                                                            />
+                                                            <span class="product-card__score">4.5</span></div>
+                                                     
+                                                </article>
+                                            </div>
+                                            <div class="col">
+                                                <article class="product-card">
+                                                    <div class="product-card__img-wrap">
+                                                      
+                                                        <a href="./product-detail.html">
+                                                            <img
+                                                                src="./assets/img/product/item-12-Photoroom.png"
+                                                                alt=""
+                                                                class="product-card__thumb"
+                                                            />
+                                                        </a>
+                                                        <div class="product-card__icon-wraps">
+                                                            <div class="product-card__icon-wrap">
+                                                             <a href="!#" class="product-card__link">
+                                                                 <img src="./assets/icons/buy.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <a href="./product-detail.html" class="product-card__link">
+                                                                 <img src="./assets/icons/eye.svg" alt="" class="product-card__icon">
+                                                             </a>
+                                                             <button class="like-btn product-card__like-btn" onclick="transformHeart(this)">
+                                                                 <img src="./assets/icons/heart.svg" alt="" class="like-btn__icon product-card__icon" />
+                                                             </button>
+                                                              
+                                                            </div>
+                                                         </div>
+                                                    </div>
+                                                    <h3 class="product-card__title  line-clamp">
+                                                        <a href="./product-detail.html"
+                                                            >Áo Khoác Đội Tuyển Việt Nam 2023 Grand Sport GS-022052 Đỏ - Hàng Chính Hãng</a
+                                                        >
+                                                    </h3>
+                                                    <p class="product-card__brand"> Grand Sport</p>
+                                                    <div class="product-card__row">
+                                                        <span class="product-card__price"
+                                                            >1.655.000đ</span
+                                                        >
+                                                        <div class="product-card__row">   
+                                                            <img
+                                                                src="./assets/icons/star.svg"
+                                                                alt=""
+                                                                class="product-card__star"
+                                                            />
+                                                            <span class="product-card__score">4.9</span></div>
+                                                     
+                                                </article>
+                                            </div>
+                                           
+                                           
+                                        </div>
+                                      
+                                       
+                                       
+                                     
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <header id="footer" class="footer"></header>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+           <div id="delete-confirm" class="dialog dialog--pro hide">
+            <div class="dialog__content pro__content">
+                <button class="form__close-pro js-toggle" toggle-target="#delete-confirm">&times;</button>
+                <div class="pro-detail">
+                  
+                    <img src="./assets/icons/circle-check.svg" alt="" class="pro-detail__icon">
+                    <span class="pro-detail__title">Thêm vào giỏ hàng thành công</span>
+                </div>
+                 
+                <article class="cart-item product-detai__item line-clamp">
+                    <a href="./product-detail.html">
+                        <img
+                            src="./assets/img/product/item-2-Photoroom.png"
+                            alt=""
+                            class="cart-item__thumb product-detai__thunb"
+                        />
+                    </a>
+                 <div class="cart-item__content">
+                    <div class="cart-item__content-left">
+                        <h3 class="cart-item__title line-clamp">
+                            <a
+                                href="./product-detail.html"
+                            >Giày Chạy Bộ Nam/Nữ Zocker Speed Light
+                            Half Carbon "Neon" KOJI00000479 - Hàng
+                            Chính Hãng</a>
+                        </h3>
+                        <p class="cart-item__price-wrap">955.000đ </p>
+                           
+                                
+                       
+                        
+                    </div>
+              
+                 </div>
+                </article>
+                <div class="dialog__bottom pro__bottom">
+                    <button class="btn btn--small btn--outline dialog__btn js-toggle pro-button" toggle-target="#delete-confirm">
+                        Tiếp tục mua hàng
+                    </button>
+                    <a href="./shipping.html"
+                        class="btn btn--small   btn--primary dialog__btn btn--no-margin pro-btn"
+                        
+                    >
+                    Thanh toán ngay
+                    </a>
+                </div>
+            </div>
+            <div class="dialog__overlay js-toggle" toggle-target="#delete-confirm"></div>
+        </div>
+        <div id="search" class="search  hide">
+            <button class="search-btn__close js-toggle" toggle-target="#search">&times;</button>
+          <div class="search--large">
+                <input
+                    type="text"
+                    placeholder="Tìm kiếm mục"
+                    class="search--large__input"
+                />
+                <button class="search--large__submit">
+                    <img
+                        src="./assets/icons/search.svg"
+                        alt=""
+                        class="search--large__icon icon"
+                    />
+                </button>
+            </div>
+            
+             
+            <div class="dialog__overlay  " toggle-target="#search"></div>
+        </div>
+    </body>
+</html>

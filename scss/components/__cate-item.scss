@@ -1,0 +1,67 @@
+@use "../abstracts";
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.cate-item {
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px 26px;
+    border-radius: 16px;
+    background-color: var(--cate-item-bg);
+    @include abstracts.breakpoint(xl) {
+        flex-direction: column;
+    }
+    @include abstracts.breakpoint(md) {
+        flex-direction: row;
+    }
+    &__thumb {
+        height: 116px;
+        height: 116px;
+        object-fit: contain;
+        background-color: var(--cate-item-thumb-bg);
+        border-radius: 8px;
+        @include abstracts.breakpoint(xl) {
+            width: 100%;
+            height: 150px;
+        }
+        @include abstracts.breakpoint(md) {
+            width: 88px;
+            height: 88px;
+        }
+    }
+    &___info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 30px;
+        @include abstracts.breakpoint(xxl) {
+            padding-right: 0;
+        }
+    }
+    &__title {
+        --line-clamp: 2;
+        color: red;
+        font-size: 2.2rem;
+        // color: var(--cate-item-title-color);
+        font-weight: 500;
+        line-height: 145.455%;
+        @include abstracts.breakpoint(md) {
+            font-size: 1.8rem;
+        }
+    }
+    &__desc {
+        color: var(--cate-item-desc-color);
+        margin-top: 6px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 150%;
+        @include abstracts.breakpoint(md) {
+            font-size: 1.4rem;
+        }
+    }
+}

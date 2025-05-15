@@ -1,0 +1,59 @@
+@use "../abstracts";
+.slideshow {
+    position: relative;
+
+    overflow: hidden;
+    &__inner {
+        display: flex;
+
+        transition: transform 0.5s ease-in-out;
+    }
+    &__item {
+        flex-shrink: 0;
+        position: relative;
+
+        width: 100%;
+        padding-top: 34%;
+        transition: opacity 1s ease-in-out;
+        @include abstracts.breakpoint(md) {
+            padding-top: 50%;
+        }
+    }
+    &__item.active {
+        opacity: 1;
+    }
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+    }
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    padding: 7px;
+    @include abstracts.breakpoint(md) {
+        font-size: 1.8rem;
+    }
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2.4rem;
+    cursor: pointer;
+
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}

@@ -1,0 +1,34 @@
+.category {
+    margin-top: 20px;
+    &-list {
+        display: flex;
+        gap: 15px;
+    }
+    &-list {
+        overflow-x: auto;
+        padding-bottom: 5px;
+    }
+    &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        padding: 5px 10px;
+        border: 1px solid #000;
+        border-radius: 3px;
+        background-color: var(--category-bg);
+        &:hover {
+            border-color: #ffb700;
+        }
+    }
+    &-item {
+        white-space: nowrap;
+    }
+    &__img {
+        display: block;
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+    }
+}

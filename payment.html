@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payment| Grocery Mart</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/apple-touch-icon.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./template/header-logined.html");
+        </script>
+        <main class="checkout-page">
+            <div class="container">
+                <div class="checkout-container">
+                    <div class="search-bar">
+                        <input
+                            type="text"
+                            name=""
+                            placeholder="Tìm kiếm mục"
+                            id=""
+                            class="search-bar__input"
+                        />
+                        <button class="search-bar__submit">
+                            <img
+                                src="./assets/icons/search.svg"
+                                alt=""
+                                class="search-bar__icon"
+                            />
+                        </button>
+                    </div>
+                </div>
+                <div class="checkout-container">
+                    <ul class="breadcrumbs checkout-page__breadcrumbs">
+                        <li class="breadcrumbs__item">
+                            <a href="./" class="breadcrumbs__link"
+                                >Trang chủ
+                                <img
+                                    src="./assets/icons/arow-right.svg"
+                                    alt=""
+                                    class="breadcrumbs__icon"
+                                />
+                            </a>
+                        </li>
+
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link">
+                                Thanh toán
+                                <img
+                                    src="./assets/icons/arow-right.svg"
+                                    alt=""
+                                    class="breadcrumbs__icon"
+                                />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="./shipping.html" class="breadcrumbs__link  ">
+                                Vận chuyển
+                                <img
+                                src="./assets/icons/arow-right.svg"
+                                alt=""
+                                class="breadcrumbs__icon"
+                            />
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="#!" class="breadcrumbs__link breadcrumbs__link-last ">
+                              
+                           Phương thức thanh toán
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="checkout-container">
+                    <div class="row gy-xl-3">
+                        <div class="col-8 col-xl-8 col-lg-12">
+                            <div class="cart-info">
+                                <div class="cart-info__top">
+                                    <h2 class="cart-info__heading cart-info__heading--lv2">1. Vận chuyển, đến vào khoảng từ Thứ Hai, ngày 16 tháng 5 đến Thứ Ba, ngày 24 tháng 5</h2>
+                                    <a href="./shipping.html"class="card-info__edit-btn  " >
+                                        <img class="icon" src="./assets/icons/edit.svg" alt="">
+                                        Biên tập
+                                    </a>
+                                </div>
+                                <article class="payment-item">
+                                    <div class="payment-item__info">
+                                    <h3 class="payment-item__title">Nguyễn Thế Anh</h3>
+                                    <p class="payment-item__desc">Số 325, Lam Sơn ,Phường Đồng Tâm, Thành Phố Vĩnh Yên,Tỉnh Vĩnh Phúc</p>
+                                </div>
+                                </article>
+                                <article class="payment-item">
+                                  <div class="payment-item__info">
+                                        <h3 class="payment-item__title">Chi tiết mục</h3>
+                                        <p class="payment-item__desc">2 mục</p>
+                                  </div>
+                                  <a href="./shipping.html" class="payment-item__details">Xem chi tiết</a>
+                                </article>
+                                
+                               
+                            </div>
+                            <div class="cart-info">
+                                <h2 class="cart-info__heading cart-info__heading--lv2"> 2. Phương thức vận chuyển</h2>
+                                <div class="cart-info__separate"></div>
+                               <h3 class="cart-info__sub-heading">Phương thức vận chuyển có sẵn</h3>
+                          <label  >     <article class="payment-item payment-item--pointer">
+                            <img src="./assets/img/paymemnt/delivery-1.svg" alt="" class="payment-item__thumb">
+                            <div class="payment-item__content">
+                                <div class="payment-item__info"> 
+                                  <h3 class="payment-item__title">Giao hàng Fedex</h3>
+                                  <p class="payment-item__desc payment-item__desc--low">Giao hàng: 2-3 ngày làm việc</p>
+                            </div>
+                                  <span class=" cart-info__checkbox payment-item__checkbox" >
+                                    <input type="radio" name="payment-delivery" checked  class="cart-info__checkbox-input payment-item__checkbox-input">
+                                    <span class="payment-item__cost">Miễn phí</span>
+                                  </span>
+                            </div>
+                           
+                                 
+                                
+                                 
+                            
+                          </article>
+                        </label>
+                            <label  >  
+                                <article class="payment-item payment-item--pointer">
+                                <img src="./assets/img/paymemnt/delivery-2.svg" alt="" class="payment-item__thumb">
+                                <div class="payment-item__content">
+                                      <div class="payment-item__info"><h3 class="payment-item__title">Giao hàng DHL</h3>
+                                        <p class="payment-item__desc payment-item__desc--low">Giao hàng: 2-3 ngày làm việc</p>
+                                    </div>
+                                
+                               
+                                   
+                                     <span class=" cart-info__checkbox payment-item__checkbox" >
+                                        <input type="radio" name="payment-delivery" class="cart-info__checkbox-input payment-item__checkbox-input">
+                                        <span class="payment-item__cost">30.000đ</span>
+                                      </span>
+                                    </div>
+                              
+                              </article>
+                            </label>
+                            </div>
+                        </div>
+                        <div class="col-4 col-xl-4 col-lg-12">
+                            <div class="cart-info">
+                                <h2 class="cart-info__heading cart-info__heading--lv2">Chi tiết thanh toán</h2>
+                                <p class="cart-info__desc">Hoàn tất đơn hàng mua của bạn bằng cách cung cấp thông tin thanh toán.</p>
+                                <form action="" class="form cart-info__form">
+                                    <div class="form__group">
+                                        <label for="last-name" class="form__label form__label--medium">   Địa chỉ email</label>
+                                        <div class="form__text-input form__text-input--small">
+                                            <input
+                                                type="text"
+                                                name="last-name"
+                                                id="last-name"
+                                                placeholder="Địa chỉ email"
+                                                class="form__input"
+                                                required
+                                                minlength="2"
+                                            />
+                                            
+                                            <img
+                                                src="./assets/icons/form-error.svg"
+                                                alt=""
+                                                class="form__input-icon-error"
+                                            />
+                                        </div>
+                                        <p class="form__error">Tên phải có ít nhất 2 ký tự</p>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="card-holder" class="form__label form__label--medium">Chủ thẻ</label>
+                                        <div class="form__text-input form__text-input--small">
+                                            <input
+                                                type="text"
+                                                name="card-holder"
+                                                id="card-holder"
+                                                placeholder="Chủ thẻ"
+                                                class="form__input"
+                                                required
+                                                minlength="2"
+                                            />
+                                            
+                                            <img
+                                                src="./assets/icons/form-error.svg"
+                                                alt=""
+                                                class="form__input-icon-error"
+                                            />
+                                        </div>
+                                        <p class="form__error">Tên phải có ít nhất 2 ký tự</p>
+                                    </div>
+                                  
+                                    <div class="form__group">
+                                        <label for="card-details" class="form__label form__label--medium">Chi tiết thẻ</label>
+                                        <div class="form__text-input form__text-input--small">
+                                            <input
+                                                type="text"
+                                                name="card-details"
+                                                id="card-details"
+                                                placeholder="Chi tiết thẻ"
+                                                class="form__input"
+                                                required
+                                                minlength="2"
+                                            />
+                                            
+                                            <img
+                                                src="./assets/icons/form-error.svg"
+                                                alt=""
+                                                class="form__input-icon-error"
+                                            />
+                                        </div>
+                                        <p class="form__error">Tên phải có ít nhất 2 ký tự</p>
+                                    </div>
+                        <div class="form__row cart-info__form-row ">
+                            <div class="form__group">
+                               
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        placeholder="MM/YY"
+                                        class="form__input"
+                                        required
+                                        
+                                    />
+                                    
+                                    <img
+                                        src="./assets/icons/form-error.svg"
+                                        alt=""
+                                        class="form__input-icon-error"
+                                    />
+                                </div>
+                                <p class="form__error">Tên phải có ít nhất 2 ký tự</p>
+                            </div>
+                            <div class="form__group">
+                                
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="CVC"
+                                        class="form__input"
+                                        required
+                                         
+                                    />
+                                    
+                                    <img
+                                        src="./assets/icons/form-error.svg"
+                                        alt=""
+                                        class="form__input-icon-error"
+                                    />
+                                </div>
+                                <p class="form__error">Số điện thoại phải có ít nhất 10 ký tự</p>
+                            </div>
+                           
+                        </div>
+                                                            
+                                </form>
+                                <div class="cart-info__row">
+                                <span>Tổng cộng <span class="cart-info__sub-label">(mục)</span> </span>
+                                <span class="cart-info__sub-price">3.208.000đ</span>
+                            </div>
+                            <div class="cart-info__row">
+                                <span>Giá  <span class="cart-info__sub-label">(Tổng cộng)</span> </span>
+                                </span>
+                                <span class="cart-info__sub-price"> 100.000đ</span>
+                            </div>
+                            <div class="cart-info__row">
+                                <span>Vận chuyển:
+                                </span>
+                                <span class="cart-info__sub-price">100.000đ</span>
+                            </div>
+                            <div class="cart-info__separate"></div>
+                            <div class="cart-info__row cart-info__row-bold">
+                                <span>Tổng số ước tính
+                                    </span>
+                                <span class="cart-info__sub-price-bold">3.408.000đ </span>
+                            </div>
+                            <a href="./shipping.html" class=" cart-info__next-btn btn btn--primary btn--rounded">Trả 3.408.000đ  </a>
+                        </div>
+                            <div class="cart-info"><a href="#!"><article class="gift-item">
+                                <div class="gift-item__icon-wrap">
+                                    <img src="./assets/icons/gift.svg" alt="" class="gift-item__icon">
+                                </div>
+                                <div class="gift-item__content">
+                                    <h3 class="gift-item__title">Gửi đơn hàng này như một món quà.</h3>
+                                    <div class="gift-item__desc">Các mặt hàng có sẵn sẽ được chuyển đến người nhận quà của bạn</div>
+                                </div>
+                            </article></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <header id="footer" class="footer"></header>
+        <script>
+            load("#footer", "./template/footer.html");
+        </script>
+        <div id="delete-confirm" class="dialog dialog--small hide">
+            <div class="dialog__content">
+                <p class="dialog__text">Bạn có muốn xóa sản phẩm này khỏi giỏ hàng không?</p>
+                <div class="dialog__bottom">
+                    <button class="btn btn--small btn--outline dialog__btn js-toggle" toggle-target="#delete-confirm">
+                        Hủy bỏ
+                    </button>
+                    <button
+                        class="btn btn--small btn--danger btn--primary dialog__btn btn--no-margin js-toggle"
+                        toggle-target="#delete-confirm"
+                    >
+                    Xóa bỏ
+                    </button>
+                </div>
+            </div>
+            <div class="dialog__overlay js-toggle" toggle-target="#delete-confirm"></div>
+        </div>
+        <div id="add-new-address" class="dialog  hide"style="--content-width:700px;">
+            <div class="dialog__content">
+                <form action="" class="form">
+                <h2 class="dialog__heading">Thêm địa chỉ giao hàng mới</h2>
+                <div class="dialog__body">
+                  
+                   
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="name" class="form__label form__label--medium">Tên</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Tên"
+                                        class="form__input"
+                                        required
+                                        minlength="2"
+                                    />
+                                    
+                                    <img
+                                        src="./assets/icons/form-error.svg"
+                                        alt=""
+                                        class="form__input-icon-error"
+                                    />
+                                </div>
+                                <p class="form__error">Tên phải có ít nhất 2 ký tự</p>
+                            </div>
+                            <div class="form__group">
+                                <label for="phone" class="form__label form__label--small">Điện thoại</label>
+                                <div class="form__text-input form__text-input--small">
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="Số điện thoại"
+                                        class="form__input"
+                                        required
+                                        minlength="11"
+                                    />
+                                    
+                                    <img
+                                        src="./assets/icons/form-error.svg"
+                                        alt=""
+                                        class="form__input-icon-error"
+                                    />
+                                </div>
+                                <p class="form__error">Số điện thoại phải có ít nhất 10 ký tự</p>
+                            </div>
+                           
+                        </div>
+                        <div class="form__group">
+                            <label for="address" class="form__label form__label--small">Địa chỉ</label>
+                            <div class="form__text-area">
+                                <textarea
+                                 
+                                    name="address"
+                                    id="address"
+                                    placeholder="Địa chỉ(Khu vực và đường phố)"
+                                    class=" form__text-area-input"
+                                    required
+                                   
+                                ></textarea>
+                                
+                                <img
+                                    src="./assets/icons/form-error.svg"
+                                    alt=""
+                                    class="form__input-icon-error"
+                                />
+                            </div>
+                            <p class="form__error">Số điện thoại phải có ít nhất 11 ký tự</p>
+                        </div>
+                        <div class="form__group">
+                            <label for="city" class="form__label form__label--small">Thành phố/Quận/Thị trấn</label>
+                            <div class="form__text-input form__text-input--small">
+                                <input
+                                    type="text"
+                                    name=" "
+                                   id="city"
+                                    placeholder="Thành phố/Quận/Thị trấn"
+                                    class="form__input js-toggle"
+                                    toggle-target="#city-dialog"
+                                    minlength="11"
+                                />
+                                
+                                <img
+                                    src="./assets/icons/form-error.svg"
+                                    alt=""
+                                    class="form__input-icon-error"
+                                />
+                                <div id="city-dialog" class="form__select-dialog hide">
+                                    <h2 class="form__dialog-heading">Thành phố/Quận/Thị trấn</h2>
+                                    <button class="form__close-dialog js-toggle" toggle-target="#city-dialog">&times;</button>
+                                    <div class="form__search">
+                                       
+                                        <input type="text" placeholder="Tìm kiếm" class="form__search-input">
+                                        <img src="./assets/icons/search.svg" alt="" class="form__search-icon icon">
+                                        
+                                    </div>
+                                    <ul class="form__options-list">
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options form__options--current">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li><li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                        <li class="form__options ">Ha Noi</li>
+                                        <li class="form__options ">Ho Chi Minh</li>
+                                        <li class="form__options ">Da Nang</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="form__error">Số điện thoại phải có ít nhất 11 ký tự</p>
+                        </div>
+                        <div
+                        class="form__group form__group--inline form__group-checkbox"
+                    >
+                        <div class="form__checkbox">
+                            <input
+                                type="checkbox"
+                                name="remember"
+                                id="remember"
+                                hidden
+                            />
+                            <label
+                                for="remember"
+                                class="form__checkbox-label"
+                                > Đặt làm địa chỉ mặc định</label
+                            >
+                        </div>
+                         
+                    </div>
+                   
+                </div>
+                <div class="dialog__bottom">
+                <button class="btn  btn--small btn--text dialog__btn js-toggle" toggle-target="#add-new-address">Hủy bỏ</button>  
+                <button class="btn btn--small btn--primary dialog__btn"  >Tạo</button>
+                </div>
+            </form>
+            </div>
+            <div class="dialog__overlay js-toggle  " toggle-target="#add-new-address"></div>
+        </div>
+    </body>
+</html>

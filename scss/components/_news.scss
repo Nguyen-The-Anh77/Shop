@@ -1,0 +1,97 @@
+@use "../abstracts";
+.news {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    background: var(--product-card-bg);
+    &__row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+        align-items: center;
+    }
+    &__icon-wrap {
+        width: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        border-radius: 8px;
+        background-color: red;
+        border: 1px solid #000;
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: white !important;
+    }
+}
+.news-large {
+    flex: 1;
+    background: var(--body-bg);
+    border: 1px solid var(--body-bg);
+    border-radius: 8px;
+    &__thumb {
+        width: calc(100% + 2px);
+        @include abstracts.breakpoint(md) {
+            height: 200px;
+        }
+        @include abstracts.breakpoint(sm) {
+            height: 150px;
+        }
+        display: block;
+        height: 350px;
+        margin: -1px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    &__info {
+        padding: 16px;
+        // background-color: var(--body-bg);
+        @include abstracts.breakpoint(md) {
+            padding: 10px;
+        }
+    }
+    &__title {
+        --line-clamp: 1;
+        font-weight: 500;
+        font-size: 1.6rem;
+        @include abstracts.breakpoint(sm) {
+            font-size: 1.4rem;
+        }
+        line-height: 1.67;
+        color: red;
+    }
+    &__desc {
+        --line-clamp: 1;
+        margin-top: 6px;
+        @include abstracts.breakpoint(md) {
+            margin-top: 1px;
+        }
+        font-size: 1.4rem;
+        line-height: 1.86;
+    }
+}
+.news-small {
+    &__wrap {
+        display: flex;
+        gap: 10px;
+    }
+    &__thumb {
+        width: 150px;
+        height: 100px;
+        @include abstracts.breakpoint(md) {
+            width: 120px;
+            height: 70px;
+        }
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    &__desc {
+        --line-clamp: 3;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 144.444%;
+    }
+}

@@ -1,0 +1,83 @@
+@use "../abstracts";
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    height: 36px;
+    color: var(--filter-btn-color);
+    background-color: var(--filter-btn-bg);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 142.857%;
+    padding: 0 14px;
+    border-radius: 6px;
+}
+.like-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 20px 60px var(--like-btn-shadow);
+    &:not(&--liked) .like-btn__icon--liked {
+        display: none;
+    }
+
+    &__icon--liked {
+        // margin-top: 10px;
+    }
+}
+.btn {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+    justify-content: center;
+    background-color: #f8f8fb;
+    padding: 0 20px;
+    height: 46px;
+    font-size: 1.8rem;
+    border-radius: 6px;
+    font-weight: 500;
+    + .btn {
+        &:not(.btn--no-margin) {
+            margin-left: 20px;
+        }
+    }
+    &--small {
+        height: 40px;
+        padding: 0 18px;
+    }
+    &--text {
+        @include abstracts.breakpoint(md) {
+            height: 40px;
+            padding: 0 8px;
+            font-size: 1.5rem;
+        }
+        color: #9e9da8;
+        background-color: transparent;
+        font-weight: 400;
+    }
+    &--primary {
+        background-color: #ffb700;
+    }
+    &--outline {
+        border: 1px solid#d2d1d6;
+        background-color: transparent;
+    }
+    &--rounded {
+        border-radius: 999px;
+    }
+    &--danger {
+        background-color: #ed4337;
+        color: var(--button-danger-color, #fff);
+    }
+    &:hover {
+        opacity: 0.9;
+    }
+    &--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
