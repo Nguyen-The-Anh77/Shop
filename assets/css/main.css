@@ -2590,6 +2590,7 @@ html.dark {
 .product-card__img-wrap {
   padding-top: 100%;
   position: relative;
+  overflow: hidden;
 }
 .product-card__thumb {
   position: absolute;
