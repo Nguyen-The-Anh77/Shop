@@ -272,22 +272,26 @@
         position: relative;
         display: block;
         height: 100%;
+        @include abstracts.breakpoint(lg) {
+            height: 250px;
+        }
         @include abstracts.breakpoint(md) {
             height: 380px;
         }
+
         border-radius: 4px;
         overflow: hidden;
         &_img {
             position: absolute;
             transition: transform 1s ease;
             width: 100%;
+            height: 100%;
             @include abstracts.breakpoint(md) {
-                height: 100%;
                 object-fit: cover;
             }
             top: 0;
             left: 0;
-            object-fit: contain;
+            object-fit: cover;
         }
         &:hover &_img {
             transform: scale(1.1);
