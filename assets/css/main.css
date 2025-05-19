@@ -3544,6 +3544,7 @@ html.dark {
 .text-content ol,
 .text-content table {
   margin: 20px 0;
+  width: 100%;
 }
 .text-content p img {
   display: block;
